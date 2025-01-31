@@ -115,7 +115,7 @@ def parse_unspecified_argument_list(unknowns: list, multiple: bool = False, err:
 
 	To a certain extent, multiple and error are incompatible. In fact, the only error this routine can catch, as of now,
 	is the event argument value value ...
-	which isn't am error if multiple is specified
+	which isn't an error if multiple is specified
 	"""
 	tmp_list = [arg for arg in unknowns if arg != "="]  # wastes a few bytes, but avoids any collateral effect of the destructive nature of the pop method()
 	config = {}
